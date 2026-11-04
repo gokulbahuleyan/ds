@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struck node
+struct node
 {
-    int date;
+    int data;
     struct node *next;
 };
 
@@ -17,7 +17,7 @@ struct node *head=NULL;
     nownode=(struct node*)malloc(sizeof(struct node));
 
     printf("enter date");
-    scanf("%d".&newnode->date);
+    scanf("%d",&newnode->date);
 
     newnode->next=head;
     head=newnode;
@@ -83,17 +83,17 @@ int main()
                 break;
 
             case 2:
-                insert();
+                deletetion();
                 break;
 
             case 3:
-                insert();
+                display();
                 break;
             
             case 4:
                 printf("exit");
                 break;
-            default
+            default:
                 printf("invalid choice");
             }
     }while (ch!=4);
