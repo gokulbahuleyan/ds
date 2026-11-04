@@ -14,10 +14,10 @@ struct node *head=NULL;
  {
     struct node *newnode;
 
-    nownode=(struct node*)malloc(sizeof(struct node));
+    newnode=(struct node*)malloc(sizeof(struct node));
 
     printf("enter date");
-    scanf("%d",&newnode->date);
+    scanf("%d",&newnode->data);
 
     newnode->next=head;
     head=newnode;
@@ -83,7 +83,7 @@ int main()
                 break;
 
             case 2:
-                deletetion();
+                deletion();
                 break;
 
             case 3:
